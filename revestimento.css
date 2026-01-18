@@ -1,0 +1,159 @@
+/* --- HERO REVESTIMENTO --- */
+.hero-bg-rev {
+    position: relative;
+    min-height: 71vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-bg-rev img {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.hero-revestimento {
+    position: relative;
+    right: 1rem;
+}
+
+.hero-revestimento h1 {
+    font-weight: 200;
+    font-size: 5rem;
+    color: var(--text-white);
+}
+
+/* --- CARDS SESSÃO 2 (Stroke Blue) --- */
+.card-stroke {
+    background-color: #fff;
+    border: 1px solid var(--primary-900);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    transition: var(--transition);
+    height: 100%;
+    text-align: left;
+}
+
+.card-stroke:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-card);
+}
+
+.icon-box-light {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-light); /* Azul bem claro */
+    color: var(--primary-900);
+    border-radius: 12px;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-stroke h3 {
+    color: var(--primary-900);
+    font-weight: 900;
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+/* --- SEÇÕES DE TRATAMENTO --- */
+.section--blue-light {
+    background-color: var(--gray-light); 
+}
+
+.rounded-img{
+   width: 250px;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+}
+
+.treatment-section {
+    padding: 4rem 0;
+}
+
+.grid-treatment {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 4rem;
+    align-items: center;
+    justify-items: end;
+}
+
+@media (max-width: 900px) {
+    .grid-treatment {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .rounded-img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+}
+
+.treatment-img img {
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.treatment-title {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--primary-900);
+    margin-bottom: 1rem;
+}
+
+.treatment-subtitle {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--primary-900);
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+
+/* Caixas Vantagens e Aplicações */
+.treatment-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+@media (max-width: 600px) {
+    .treatment-boxes {
+        grid-template-columns: 1fr;
+    }
+}
+
+.info-box {
+    background-color: var(--blue-card-bg); /* Fundo semi-transparente para combinar com azul */
+    padding: 2.8rem 2rem;
+    border-radius: 16px;
+    height: 100%;
+}
+
+/* Quando a seção for branca, as caixas precisam ser azuis */
+.section--light .info-box.box-blue {
+    background-color: #B9D8E9;
+}
+
+.info-box h4 {
+    color: var(--primary-900);
+    font-weight: 900;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.info-box p {
+    color: var(--text-dark);
+    font-weight: 300;
+    font-size: 0.95rem;
+    margin: 0;
+}

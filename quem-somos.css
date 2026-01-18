@@ -1,0 +1,88 @@
+
+.hero-bg{
+      position: relative;
+    min-height: 71vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden; 
+}
+.hero-bg img{
+    position: absolute;
+    object-fit: cover;
+    object-position: left center;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-quem-somos {
+    position: relative;
+    right: 1rem;
+}
+
+.hero-quem-somos h1 {
+    font-weight: 200;
+    font-size: 5rem;
+}
+
+
+.grid-story {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    align-items: end; 
+}
+
+.story-logo {
+    display: flex;
+    justify-content: center; /* Ou flex-start dependendo do ajuste fino */
+}
+
+@media (max-width: 900px) {
+    .grid-story {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+/* Card com Borda (Missão, Visão, Valores) */
+.card-bordered {
+    background-color: #fff;
+    border: 1px solid var(--primary-900); /* Borda azul escura */
+    border-radius: 20px; /* Arredondamento conforme print */
+    padding: 2.5rem 2rem;
+    transition: var(--transition);
+    height: 100%; /* Para ficarem da mesma altura */
+}
+
+.card-bordered:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-card);
+}
+
+.card-bordered h3 {
+    color: var(--text-dark); /* Título preto/cinza escuro */
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Ícone quadrado azul claro */
+.icon-box-square {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--gray-light); /* Azul bem claro */
+    color: var(--primary-800); /* Ícone escuro */
+    border-radius: 12px;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Container Estreito para Texto (Sustentabilidade) */
+.container--narrow {
+    max-width: 700px;
+    margin: 0 auto;
+}
+

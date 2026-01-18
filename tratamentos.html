@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamentos - ZKN do Brasil</title>
+    <meta name="description" content="Tecnologia, precisão e qualidade em tratamentos superficiais com laboratório próprio.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tratamentos.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo" aria-label="ZKN Home">
+                <img src="/assets/icons/Logo.png" alt="ZKN do Brasil Logo" width="120" height="60">
+            </a>
+            <div style="display: inline-flex; align-items: center; gap:26px;">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="quem-somos.html" class="nav__link">Quem somos</a></li>
+                        <li><a href="tratamentos.html" class="nav__link" style="color: var(--primary-700);">Tratamentos</a></li>
+                        <li><a href="revestimento.html" class="nav__link">Revestimento</a></li>
+                        <li><a href="#contato" class="nav__link">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <a href="#" class="btn btn--primary btn--pill">Área do cliente</a>
+                    <button class="mobile-toggle" aria-label="Abrir Menu">
+                        <i class="ph ph-list"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-bg-trat">
+            <div class="hero__overlay"></div>
+            <img src="/assets/backgrounds/tratamento-bg.png" alt="Laboratório de Tratamento">
+            
+            <div class="container hero__content hero-tratamento reveal">
+                <h1 class="hero__title">Tratamento</h1>
+            </div>
+        </section>
+
+        <section class="section section--light">
+            <div class="container center container--narrow reveal">
+                <h2 class="section__title" style="color: var(--primary-900);">Tecnologia, Precisão e Qualidade no Tratamento Superficial.</h2>
+                <p style="margin-bottom: 1.5rem;">Contamos com um laboratório moderno e altamente equipado, com profissionais especializados para garantir a qualidade de todos os processos.</p>
+                <p>Monitoramos cada etapa com análises rigorosas, assegurando segurança, conformidade e eficiência.</p>
+            </div>
+        </section>
+
+        <section class="section section--light" style="padding-top: 0;">
+            <div class="container">
+                <div class="grid-3">
+                    <article class="card-stroke reveal">
+                        <div class="icon-box-light">
+                            <i class="ph ph-waves"></i> </div>
+                        <h3>Câmara Úmida – Simulação de ambientes úmidos para testes de durabilidade.</h3>
+                    </article>
+
+                    <article class="card-stroke reveal">
+                        <div class="icon-box-light">
+                            <i class="ph ph-thermometer-hot"></i> </div>
+                        <h3>Estufas – Ensaios de choque térmico e acondicionamento.</h3>
+                    </article>
+
+                    <article class="card-stroke reveal">
+                        <div class="icon-box-light">
+                            <i class="ph ph-magnet"></i> </div>
+                        <h3>Medidores de camada magnéticos – Garantia de precisão nas medições.</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--light">
+            <div class="container">
+                <div class="grid-excelencia align-center">
+                    
+                    <div class="excelencia-content reveal">
+                        <span style="color: var(--primary-700); font-size: 1.2rem; display: block; margin-bottom: 0.5rem;">Excelência Reconhecida:</span>
+                        <h2 class="section__title" style="margin-bottom: 1.5rem;">Licenças e Certificações que Garantem Segurança e Qualidade</h2>
+                        
+                        <p style="margin-bottom: 1rem;">Nosso compromisso com a excelência é respaldado por uma série de licenças e certificações concedidas por órgãos de referência, como CETESB, prefeituras, AVCB, Ibama, Polícia Federal, Exército e Polícia Civil. Esses reconhecimentos comprovam não apenas a conformidade com as normas técnicas e ambientais, mas também nosso foco em garantir processos seguros, responsáveis e de alta qualidade. Cada etapa do nosso trabalho é conduzida com rigor e transparência, oferecendo aos nossos clientes a confiança de que estão escolhendo uma empresa que respeita padrões elevados e atua com total responsabilidade.</p>
+                    </div>
+
+                    <div class="excelencia-img reveal">
+                        <img src="/assets/backgrounds/excelencia-lab.png" alt="Técnico em laboratório" class="img-3-4">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section section--gray-light">
+            <div class="container">
+                <div class="contact-box reveal">
+                    <h2 class="section__title center">Venha falar com a gente!</h2>
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-row">
+                            <input type="text" id="nome" name="nome" placeholder="Usuário" required class="form-input">
+                            <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required class="form-input">
+                        </div>
+                        <div class="form-row">
+                            <input type="email" id="email" name="email" placeholder="E-mail Corporativo" required class="form-input full">
+                        </div>
+                        <div class="form-row">
+                            <input type="text" id="empresa" name="empresa" placeholder="Empresa" class="form-input full">
+                        </div>
+                        <div class="form-row">
+                            <select name="assunto" id="assunto" class="form-input">
+                                <option value="" disabled selected>Como deseja receber nosso contato?</option>
+                                <option value="email">E-mail</option>
+                                <option value="telefone">Telefone</option>
+                                <option value="whatsapp">WhatsApp</option>
+                            </select>
+                            <input type="text" id="atividade" name="atividade" placeholder="Qual atividade no campo?" class="form-input">
+                        </div>
+                        <div class="form-row">
+                            <textarea name="mensagem" id="mensagem" placeholder="Como podemos ajudar?" rows="4" class="form-input full"></textarea>
+                        </div>
+                        <div class="form-actions center">
+                            <button type="submit" class="btn btn--primary btn--wide">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div>
+                <div class="footer__logos">
+                    <img src="/assets/icons/zkn-logo-footer.png" alt="ZKN Logo" width="80">
+                    <img src="/assets/icons/zkn-iso-footer.png" alt="ISO 9001" width="60">
+                </div>
+                <div class="footer__contact">
+                    <a href="mailto:adm@zkndobrasil.com.br"><i class="ph ph-envelope"></i> adm@zkndobrasil.com.br</a>
+                    <a href="tel:+551934642952"><i class="ph ph-phone"></i> (19) 3464-2952</a>
+                </div>
+            </div>
+            <div class="footer__info">
+                <div class="footer__socials">
+                    <a href="#" aria-label="LinkedIn"><img src="/assets/icons/linkedin.png" alt=""></a>
+                    <a href="#" aria-label="YouTube"><img src="/assets/icons/you-tube.png" alt=""></a>
+                    <a href="#" aria-label="Facebook"><img src="/assets/icons/facebook.png" alt=""></a>
+                    <a href="#" aria-label="Instagram"><img src="/assets/icons/instagram.png" alt=""></a>
+                </div>
+                <address class="footer__address">
+                    <strong>Zkn Galvanoplastia do Brasil LTDA</strong><br>
+                    R. Roberto Alves de Almeida, 127<br>
+                    Distrito Industrial I - Santa Bárbara d'Oeste - SP, 13456-136
+                </address>
+                <a href="https://maps.google.com" target="_blank" class="btn btn--small btn--blue-light">
+                    <i class="ph ph-map-pin"></i> VER MAPA
+                </a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>© ZKN do Brasil 2025 | Todos os direitos reservados</p>
+                <span>Desenvolvido por <img src="/assets/icons/oxy-logo.png" alt="Logo oxycom"></span>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="whatsapp-float" aria-label="Fale conosco no WhatsApp">
+        <i class="ph ph-whatsapp-logo"></i>
+    </a>
+    <script src="script.js"></script>
+</body>
+
+</html>

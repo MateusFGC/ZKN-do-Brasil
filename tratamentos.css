@@ -1,0 +1,111 @@
+/* --- HERO TRATAMENTOS --- */
+.hero-bg-trat {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-bg-trat img {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.hero-tratamento {
+    position: relative;
+    right: 1rem;
+}
+
+.hero-tratamento h1 {
+    font-weight: 200;
+    font-size: 5rem;
+    color: var(--text-white);
+}
+
+/* --- CARDS (Reutilização do estilo Stroke) --- */
+/* Duplicado aqui para garantir que funcione isoladamente nesta página 
+   caso revestimento.css não seja carregado, ou pode ser movido para style.css global */
+.card-stroke {
+    background-color: #fff;
+    border: 1px solid var(--primary-900);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    transition: var(--transition);
+    height: 100%;
+    text-align: left;
+}
+
+.card-stroke:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-card);
+}
+
+.icon-box-light {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--gray-light);
+    color: var(--primary-900);
+    border-radius: 12px;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-stroke h3 {
+    color: var(--primary-900);
+    font-weight: 900;
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+/* --- SEÇÃO EXCELÊNCIA (Texto Esq / Imagem Dir) --- */
+.grid-excelencia {
+       display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    margin: 0 auto;
+    width: 76%;
+    justify-items: center;
+}
+
+.excelencia-content {
+    text-align: left;
+}
+
+.img-3-4 {
+    width: 300px;
+    height: auto;
+    aspect-ratio: 3 / 4; /* Proporção solicitada */
+    object-fit: cover;
+    border-radius: 20px; /* Opcional, para combinar com o design */
+}
+
+@media (max-width: 900px) {
+    .grid-excelencia {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .excelencia-img {
+        order: -1; /* Imagem acima no mobile, opcional */
+        margin-bottom: 2rem;
+    }
+    .img-3-4 {
+        aspect-ratio: 16 / 9; /* Ajuste para mobile se necessário */
+        width: 100%;
+    }
+}
+
+.container--narrow {
+    max-width: 800px;
+}
+
+.align-center {
+    align-items: center;
+}
