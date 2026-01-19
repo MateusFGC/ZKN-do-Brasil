@@ -69,7 +69,7 @@
 }
 
 .rounded-img{
-   width: 250px;
+   width: 100%;
     height: auto;
     aspect-ratio: 3 / 4;
     object-fit: cover;
@@ -81,10 +81,10 @@
 
 .grid-treatment {
     display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    gap: 4rem;
+    grid-template-columns: 0.37fr 1.2fr;
+    gap: 2rem;
     align-items: center;
-    justify-items: end;
+    
 }
 
 @media (max-width: 900px) {
@@ -105,14 +105,14 @@
 }
 
 .treatment-title {
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 900;
     color: var(--primary-900);
     margin-bottom: 1rem;
 }
 
 .treatment-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.75rem;
     font-weight: 800;
     color: var(--primary-900);
     margin-bottom: 2rem;
@@ -134,7 +134,7 @@
 
 .info-box {
     background-color: var(--blue-card-bg); /* Fundo semi-transparente para combinar com azul */
-    padding: 2.8rem 2rem;
+    padding: 2rem 1rem 2rem 1rem;
     border-radius: 16px;
     height: 100%;
 }
@@ -147,13 +147,13 @@
 .info-box h4 {
     color: var(--primary-900);
     font-weight: 900;
-    font-size: 1.1rem;
+    font-size: 1.75rem;
     margin-bottom: 0.5rem;
 }
 
 .info-box p {
     color: var(--text-dark);
     font-weight: 300;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     margin: 0;
 }

@@ -320,7 +320,7 @@ a {
 
 .hero__content {
     color: var(--text-white);
-    max-width: 800px;
+    /* max-width: 800px; */
 }
 
 .hero__divider {
