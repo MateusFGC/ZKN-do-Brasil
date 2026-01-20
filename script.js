@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // --- Lógica de Scroll Reveal (Entrada e Saída) ---
-    
+
     const revealElements = document.querySelectorAll('.reveal');
 
     const revealOptions = {
@@ -29,29 +29,57 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileToggle = document.querySelector('.mobile-toggle');
     const nav = document.querySelector('.nav');
 
-    if(mobileToggle && nav) {
+    if (mobileToggle && nav) {
         mobileToggle.addEventListener('click', () => {
             // Em um cenário real, alternaria uma classe 'open' no CSS
             // para mostrar o menu em overlay
             const isHidden = window.getComputedStyle(nav).display === 'none';
             nav.style.display = isHidden ? 'block' : 'none';
-            
+
             // Ajuste rápido de estilo inline para demo (ideal mover para CSS)
-            console.log(isHidden);
-            
-            if(isHidden) {
-                nav.style.position = 'absolute';
-                nav.style.top = '100%';
-                nav.style.left = '0';
-                nav.style.width = '100%';
-                nav.style.background = '#fff';
-                nav.style.padding = '1rem';
-                nav.style.boxShadow = '0 5px 10px rgba(0,0,0,0.1)';
-                
-                const list = nav.querySelector('ul');
-                list.style.flexDirection = 'column';
-                list.style.alignItems = 'center';
+
+            if (isHidden) {
+                addProperty()
+            } else {
+                removeProperty()
             }
         });
+    }
+    window.addEventListener('resize', () => {
+        const tam = window.innerWidth
+        if (tam => 900) {
+            nav.style.removeProperty('display');
+            removeProperty()
+        }
+
+    });
+
+    function addProperty() {
+        nav.style.position = 'absolute';
+        nav.style.top = '100%';
+        nav.style.right = '0';
+        nav.style.width = '30%';
+        nav.style.borderRadius = '0 0 29px 29px';
+        nav.style.background = '#fff';
+        nav.style.padding = '1rem';
+        nav.style.boxShadow = '0 5px 10px rgba(0,0,0,0.1)';
+
+        const list = nav.querySelector('ul');
+        list.style.flexDirection = 'column';
+        list.style.alignItems = 'center';
+    }
+
+    function removeProperty() {
+        nav.style.removeProperty('position');
+        nav.style.removeProperty('top');
+        nav.style.removeProperty('left');
+        nav.style.removeProperty('width');
+        nav.style.removeProperty('background');
+        nav.style.removeProperty('padding');
+        nav.style.removeProperty('box-shadow');
+
+        const list = nav.querySelector('ul');
+        list.style.removeProperty('flex-direction');
+        list.style.removeProperty('align-items');
     }
 });

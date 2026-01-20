@@ -249,7 +249,7 @@ a {
     align-items: center;
 }
 
-
+/* Menu de navegação */
 
 .nav__list {
     display: flex;
@@ -273,10 +273,30 @@ a {
     font-size: 1.5rem;
 }
 
+.menu-nav{
+    display: flex; 
+    align-items: center; 
+    gap:26px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__actions > a {
+    display: block;
+}
+
 @media (max-width: 900px) {
     .nav {
         display: none;
     }
+
+    .header__actions > a {
+    display: none;
+}
 
     .mobile-toggle {
         display: block;
