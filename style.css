@@ -249,6 +249,10 @@ a {
     align-items: center;
 }
 
+.header__container > img {
+    width: 90px;
+}
+
 /* Menu de navegação */
 
 .nav__list {
@@ -698,6 +702,10 @@ pois não houve pedido de alteração nestes blocos) ... */
 @media (max-width: 600px) {
     .contact-form .form-row {
         flex-direction: column;
+    }
+    
+    .footer__container{
+        justify-content: center !important;
     }
 }
 
