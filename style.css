@@ -706,7 +706,7 @@ pois não houve pedido de alteração nestes blocos) ... */
     }
     .footer__container {
     
-    justify-content: center;
+    justify-content: center !important;
  
 }
 }
