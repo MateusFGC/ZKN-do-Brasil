@@ -256,7 +256,6 @@ a {
 .header__container > img {
     width: 90px;
 }
-
 /* Menu de navegação */
 
 .nav__list {
@@ -708,10 +707,16 @@ pois não houve pedido de alteração nestes blocos) ... */
     .contact-form .form-row {
         flex-direction: column;
     }
-    
+   
     .footer__container{
         justify-content: center !important;
     }
+
+    .footer__container {
+    
+    justify-content: center !important;
+ 
+}
 }
 
 .form-input {
