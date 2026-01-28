@@ -1,0 +1,142 @@
+/* --- HERO BLOG (Destaques) --- */
+
+.hero-blog {
+    background-color: var(--dark-700); /* Cinza escuro do style guide (#575650) */
+    padding: 4rem 0;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilo para o link "Voltar a home" */
+.nav__back-link {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaço entre texto e ícone */
+    color: var(--text-gray); /* Usa o cinza do seu sistema */
+    font-size: 0.9rem;
+    font-weight: 400; /* Regular, conforme print */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav__back-link:hover {
+    color: var(--primary-700); /* Azul ao passar o mouse */
+}
+
+.nav__back-link i {
+    font-size: 0.8rem; /* Ícone levemente menor */
+}
+
+/* Card de Destaque */
+.highlight-card {
+    position: relative;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.highlight-card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Gradiente azulado na parte de baixo (30%), transparente para cima */
+    background: linear-gradient(to top, rgba(4, 24, 64, 0.9) 0%, rgba(4, 24, 64, 0.7) 30%, rgba(0,0,0,0) 60%);
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem;
+}
+
+.highlight-card__content {
+    color: var(--text-white);
+    width: 100%;
+}
+
+.highlight-card__content h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.highlight-card__content p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+/* --- ESTILOS GERAIS DE CARD --- */
+.category-pill {
+    display: inline-block;
+    background-color: var(--primary-300);
+    color: var(--categoryText);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 1rem;
+    border-radius: 50px; /* Bordas redondas */
+    text-transform: uppercase;
+}
+
+.divider-small {
+    height: 2px;
+    width: 30px;
+    background-color: var(--primary-500);
+    margin: 0.5rem 0;
+}
+
+/* --- CARD DE POST PADRÃO --- */
+.blog-post-card {
+    background-color: #fff;
+    /* border-radius: 20px; Removido do container principal */
+    overflow: hidden; /* Garante que a imagem respeite a borda */
+    transition: var(--transition);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-card);
+}
+
+.blog-post-card__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.blog-post-card__body {
+    padding: 1.5rem 0; /* Padding apenas vertical */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.blog-post-card__body h3 {
+    color: var(--text-dark);
+    font-weight: 900;
+    font-size: 1.1rem;
+    margin: 0.8rem 0;
+    line-height: 1.4;
+}
+
+.blog-post-card__date {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    margin-top: auto; /* Empurra a data para o final do card */
+}

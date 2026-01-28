@@ -1,110 +1,184 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notícias - ZKN do Brasil</title>
-    
+    <title>Notícias e Destaques - ZKN do Brasil</title>
+    <meta name="description"
+        content="Fique por dentro das últimas notícias, novidades e artigos técnicos da ZKN do Brasil.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    
+
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
 </head>
+
 <body>
 
     <header class="header">
         <div class="container header__container">
             <a href="index.html" class="logo" aria-label="ZKN Home">
-                <img src="assets/Logo.png" alt="ZKN do Brasil Logo" width="120" height="60">
+                <img src="/assets/icons/Logo.png" alt="ZKN do Brasil Logo" width="120" height="60">
             </a>
             <div style="display: inline-flex; align-items: center; gap:26px;">
                 <nav class="nav">
-                    <ul class="nav__list">
-                        <li><a href="quem-somos.html" class="nav__link">Quem somos</a></li>
-                        <li><a href="tratamentos.html" class="nav__link">Tratamentos</a></li>
-                        <li><a href="blog.html" class="nav__link" style="color: var(--primary-700);">Notícias</a></li>
-                        <li><a href="#contato" class="nav__link">Contato</a></li>
-                    </ul>
+                    <a href="index.html" class="nav__back-link">
+                        Voltar a home <i class="ph ph-caret-left"></i>
+                    </a>
                 </nav>
-                <div class="header__actions">
-                    <a href="#" class="btn btn--primary btn--pill">Área do cliente</a>
-                    <button class="mobile-toggle" aria-label="Abrir Menu">
-                        <i class="ph ph-list"></i>
-                    </button>
-                </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="section section--light">
-            <div class="container news">
-                <h1 class="section__title center reveal">Notícias e Artigos</h1>
-                
-                <div class="grid-3 mt-medium">
-                    <article class="blog-card-vertical reveal" style="background-image: url('assets/news1.jpg');">
-                        <div class="blog-card-vertical__overlay">
-                            <div class="blog-card-vertical__content">
-                                <h3>A ansiedade pode ser um desafio significativo</h3>
-                                <div class="divider_blue"></div>
-                                <p>Esteja sempre atento aos sinais físicos, emocionais e comportamentais que indicam o aumento da ansiedade.</p>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <article class="blog-card-vertical reveal" style="background-image: url('assets/news2.jpg');">
-                        <div class="blog-card-vertical__overlay">
-                            <div class="blog-card-vertical__content">
+        <section class="hero-blog">
+            <div class="container">
+                <h1 class="section__title center" style="color: var(--text-white); margin-bottom: 3rem;">Destaques</h1>
+                <div class="grid-2">
+                    <article class="highlight-card reveal" style="background-image: url('/assets/news1.jpg');">
+                        <div class="highlight-card__overlay">
+                            <div class="highlight-card__content">
+                                <span class="category-pill">Categoria</span>
                                 <h3>A expressão "less is more"</h3>
-                                <div class="divider_blue"></div>
-                                <p>A expressão "less is more" (em inglês) foi popularizada pelo arquiteto e designer alemão Ludwig Mies van der Rohe.</p>
+                                <div class="divider-small"></div>
+                                <p>A expressão "less is more" (em inglês) foi popularizada pelo arquiteto e designer
+                                    alemão Ludwig Mies van der Rohe.</p>
                             </div>
                         </div>
                     </article>
 
-                    <article class="blog-card-vertical reveal" style="background-image: url('assets/news3.jpg');">
-                        <div class="blog-card-vertical__overlay">
-                            <div class="blog-card-vertical__content">
-                                <h3>Você sabe o que é PO?</h3>
-                                <div class="divider_blue"></div>
-                                <p>O PO ou Product Owner representa os interesses de todos os envolvidos (usuários e stakeholders).</p>
-                            </div>
-                        </div>
-                    </article>
-                     <article class="blog-card-vertical reveal" style="background-image: url('assets/tecnologia.png');">
-                        <div class="blog-card-vertical__overlay">
-                            <div class="blog-card-vertical__content">
-                                <h3>Inovação na Galvanoplastia</h3>
-                                <div class="divider_blue"></div>
-                                <p>Novas tecnologias garantem revestimentos mais duráveis e sustentáveis.</p>
+                    <article class="highlight-card reveal" style="background-image: url('/assets/news2.jpg');">
+                        <div class="highlight-card__overlay">
+                            <div class="highlight-card__content">
+                                <span class="category-pill">Categoria</span>
+                                <h3>Inovação em Tratamentos</h3>
+                                <div class="divider-small"></div>
+                                <p>Descubra as novas tecnologias que estão revolucionando o mercado de galvanoplastia.
+                                </p>
                             </div>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
+
+        <section class="section section--light">
+            <div class="container">
+                <div class="grid-3">
+                    <article class="blog-post-card reveal">
+                        <img src="/assets/news3.jpg" alt="Notícia 1" class="blog-post-card__img">
+                        <div class="blog-post-card__body">
+                            <span class="category-pill">Categoria</span>
+                            <h3>Lorem Ipsum is simply text of the printing and typesetting industry.</h3>
+                            <span class="blog-post-card__date">00 Mes de 2024</span>
+                        </div>
+                    </article>
+                    <article class="blog-post-card reveal">
+                        <img src="/assets/news1.jpg" alt="Notícia 2" class="blog-post-card__img">
+                        <div class="blog-post-card__body">
+                            <span class="category-pill">Categoria</span>
+                            <h3>Lorem Ipsum is simply text of the printing and typesetting industry.</h3>
+                            <span class="blog-post-card__date">00 Mes de 2024</span>
+                        </div>
+                    </article>
+                    <article class="blog-post-card reveal">
+                        <img src="/assets/news2.jpg" alt="Notícia 3" class="blog-post-card__img">
+                        <div class="blog-post-card__body">
+                            <span class="category-pill">Categoria</span>
+                            <h3>Lorem Ipsum is simply text of the printing and typesetting industry.</h3>
+                            <span class="blog-post-card__date">00 Mes de 2024</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--light" style="padding-top: 0;">
+            <div class="container">
+                <div class="grid-3">
+                    <article class="blog-post-card reveal">
+                        <img src="/assets/news2.jpg" alt="Notícia 4" class="blog-post-card__img">
+                        <div class="blog-post-card__body">
+                            <span class="category-pill">Categoria</span>
+                            <h3>Lorem Ipsum is simply text of the printing.</h3>
+                            <span class="blog-post-card__date">00 Mes de 2024</span>
+                        </div>
+                    </article>
+                    <article class="blog-post-card reveal">
+                        <img src="/assets/news3.jpg" alt="Notícia 5" class="blog-post-card__img">
+                        <div class="blog-post-card__body">
+                            <span class="category-pill">Categoria</span>
+                            <h3>Lorem Ipsum is simply text of the printing.</h3>
+                            <span class="blog-post-card__date">00 Mes de 2024</span>
+                        </div>
+                    </article>
+                    <article class="blog-post-card reveal">
+                        <img src="/assets/news1.jpg" alt="Notícia 6" class="blog-post-card__img">
+                        <div class="blog-post-card__body">
+                            <span class="category-pill">Categoria</span>
+                            <h3>Lorem Ipsum is simply text of the printing.</h3>
+                            <span class="blog-post-card__date">00 Mes de 2024</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--light" style="padding-top: 0;">
+            <div class="container">
+                <div class="grid-3">
+                    <article class="blog-post-card reveal">
+                        <img src="/assets/news1.jpg" alt="Notícia 7" class="blog-post-card__img">
+                        <div class="blog-post-card__body">
+                            <span class="category-pill">Categoria</span>
+                            <h3>Lorem Ipsum is simply text of the printing.</h3>
+                            <span class="blog-post-card__date">00 Mes de 2024</span>
+                        </div>
+                    </article>
+                    <article class="blog-post-card reveal">
+                        <img src="/assets/news2.jpg" alt="Notícia 8" class="blog-post-card__img">
+                        <div class="blog-post-card__body">
+                            <span class="category-pill">Categoria</span>
+                            <h3>Lorem Ipsum is simply text of the printing.</h3>
+                            <span class="blog-post-card__date">00 Mes de 2024</span>
+                        </div>
+                    </article>
+                    <article class="blog-post-card reveal">
+                        <img src="/assets/news3.jpg" alt="Notícia 9" class="blog-post-card__img">
+                        <div class="blog-post-card__body">
+                            <span class="category-pill">Categoria</span>
+                            <h3>Lorem Ipsum is simply text of the printing.</h3>
+                            <span class="blog-post-card__date">00 Mes de 2024</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer">
         <div class="container footer__container">
-            <div >
+            <div>
                 <div class="footer__logos">
-                    <img src="assets/zkn-logo-footer.png" alt="ZKN Logo" width="80" >
-                    <img src="assets/zkn-iso-footer.png" alt="ISO 9001" width="60">
+                    <img src="/assets/icons/zkn-logo-footer.png" alt="ZKN Logo" width="80">
+                    <img src="/assets/icons/zkn-iso-footer.png" alt="ISO 9001" width="60">
                 </div>
-                 <div class="footer__contact">
-                        <a href="mailto:adm@zkndobrasil.com.br"><i class="ph ph-envelope"></i> adm@zkndobrasil.com.br</a>
-                        <a href="tel:+551934642952"><i class="ph ph-phone"></i> (19) 3464-2952</a>
+                <div class="footer__contact">
+                    <a href="mailto:adm@zkndobrasil.com.br"><i class="ph ph-envelope"></i> adm@zkndobrasil.com.br</a>
+                    <a href="tel:+551934642952"><i class="ph ph-phone"></i> (19) 3464-2952</a>
                 </div>
             </div>
             <div class="footer__info">
                 <div class="footer__socials">
-                    <a href="#" aria-label="LinkedIn"><img src="assets/linkedin.png" alt=""></a>
-                    <a href="#" aria-label="YouTube"><img src="assets/you-tube.png" alt=""></a>
-                    <a href="#" aria-label="Facebook"><img src="assets/facebook.png" alt=""></a>
-                    <a href="#" aria-label="Instagram"><img src="assets/instagram.png" alt=""></a>
+                    <a href="#" aria-label="LinkedIn"><img src="/assets/icons/linkedin.png" alt=""></a>
+                    <a href="#" aria-label="YouTube"><img src="/assets/icons/you-tube.png" alt=""></a>
+                    <a href="#" aria-label="Facebook"><img src="/assets/icons/facebook.png" alt=""></a>
+                    <a href="#" aria-label="Instagram"><img src="/assets/icons/instagram.png" alt=""></a>
                 </div>
                 <address class="footer__address">
                     <strong>Zkn Galvanoplastia do Brasil LTDA</strong><br>
@@ -119,7 +193,7 @@
         <div class="footer__bottom">
             <div class="container">
                 <p>© ZKN do Brasil 2025 | Todos os direitos reservados</p>
-                <span>Desenvolvido por <img src="assets/oxy-logo.png" alt="Logo oxycom"></span>
+                <span>Desenvolvido por <img src="/assets/icons/oxy-logo.png" alt="Logo oxycom"></span>
             </div>
         </div>
     </footer>
@@ -128,4 +202,5 @@
     </a>
     <script src="script.js"></script>
 </body>
+
 </html>

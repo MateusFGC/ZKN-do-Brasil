@@ -9,6 +9,10 @@
     --primary-light: #eef6fc;
     --gray-light: #E3F0F5;
     /* Fundo claro padrão */
+    
+    /* Blog */
+    --dark-700: #748596;
+    --categoryText:#343A3F;
 
     /* ATUALIZAÇÃO: Novas cores solicitadas */
     --accent-yellow: #F9B033;
@@ -257,6 +261,7 @@ a {
 
 .nav__list {
     display: flex;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -280,7 +285,7 @@ a {
 .menu-nav{
     display: flex; 
     align-items: center; 
-    gap:26px;
+    /* gap:26px; */
 }
 
 .nav {
